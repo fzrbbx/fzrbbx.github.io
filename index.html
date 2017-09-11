@@ -1,1 +1,164 @@
-hi there
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    h1, h2, h3, h4, i {
+        color: #0275d8;
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1.3vw;
+    }
+    .fsidebar {
+        height: 100vh;
+        box-shadow: 1px 0 17px 0 #95a5a6;
+        padding: 0;
+        margin-left: 0;
+    }
+    .fhead {
+        height: 18vw;
+        padding: 5px;
+        text-align: center;
+        color: white;
+        background: #0275d8;
+        /* box-shadow: 0 1px 5px 0 #0275d8; */
+    }
+    .fphoto {
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .fsocial {
+        width: 100%;
+        padding: 20px;
+    }
+    .fsocial li {
+        float: left;
+        list-style: none;
+        padding-left: 20px;
+    }
+    .fcontent-head {
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+    .fskill li {
+        list-style: none;
+    }
+    .badge-default {
+        background: #f39c12;
+    }
+
+    .list-group, .list-group-item {
+        border-radius: 0 !important;
+    }
+    .list-group-item.active {
+        /* box-shadow: 0 1px 5px 0 #2c3e50; */
+        background: #f39c12;
+        border-color: #f39c12;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 fsidebar">
+            <div class="fhead">
+                <div class="fphoto">
+                    <img src="me.jpg" class="rounded-circle img-fluid" alt="">
+                    <p>Fathur Hidayat</p>  
+                </div>
+            </div>
+
+            <ul class="fsocial">
+                <li><i class="fa fa-facebook " aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+            </ul>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Profil</a>
+                <a href="#" class="list-group-item list-group-item-action active">Keahlian</a>
+                <a href="#" class="list-group-item list-group-item-action">Portofolio</a>
+                <a href="#" class="list-group-item list-group-item-action">Blog</a>
+            </div>
+
+        </div>
+
+        <div class="col-md-10">
+            <div class="fcontent-head">
+                <h1>Keahlian</h1>
+            </div>
+
+            <hr>
+
+            <div class="container-fluid">
+                <div class="card">
+                  <img class="card-img-top img-fluid" src="holder.js/100%x180/" alt="">
+                  <div class="card-block text-xs-left|center|right">
+                    <h4 class="card-title">Front End</h4>
+                    <p class="card-text">
+                        <span class="badge badge-default">HTML</span>
+                        <span class="badge badge-default">CSS</span>
+                        <span class="badge badge-default">Javascript</span>
+                    </p>
+                    <p>Framework : &emsp; 
+                        <span class="badge badge-default">Angular2</span>
+                        <span class="badge badge-default">Jquery</span>
+                    </p>
+                  </div>
+                </div>
+                
+                    
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="holder.js/100%x180/" alt="">
+                    <div class="card-block text-xs-left|center|right">
+                        <h4 class="card-title">Back End</h4>
+                        <p class="card-text">
+                            <span class="badge badge-default">Python</span>
+                            <span class="badge badge-default">PHP</span>
+                            <span class="badge badge-default">REST</span>
+                        </p>
+                        <p>Framework : &emsp; 
+                            <span class="badge badge-default">Django</span>
+                            <span class="badge badge-default">Laravel</span>
+                            <span class="badge badge-default">Lumen</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="holder.js/100%x180/" alt="">
+                    <div class="card-block text-xs-left|center|right">
+                        <h4 class="card-title">Lainnya</h4>
+                        <p class="card-text">
+                            <span class="badge badge-default">Desain Logo</span>
+                            <span class="badge badge-default">Embedded System</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
