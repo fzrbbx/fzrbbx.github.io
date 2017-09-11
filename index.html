@@ -10,6 +10,7 @@
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <style>
     h1, h2, h3, h4, i {
@@ -38,9 +39,9 @@ background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-2
 background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    /* .fcontent {
-        
-    } */
+    .fcontent p {
+        font-family: 'Lato', sans-serif;
+    }
     .ffooter {
         position: absolute;
         bottom: 0;
@@ -60,16 +61,16 @@ background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, F
         border-radius: 10px;
         text-align: center;
     }
-    .fphoto img {
-        /* box-shadow: 2px 2px 5px 0 #34495e; */
-    }
     .fsocial {
         margin: auto;
         width: 80%;
-        padding: 15px;   
+        padding: 15px;
     }
     .fsocial a {
         padding-right: 15px;
+    }
+    .fsocialp a{
+        padding-right: 10px;
     }
     .fcontent-head {
         padding-top: 20px;
@@ -141,9 +142,16 @@ background: -webkit-linear-gradient(to right, #F7971E, #FFD200);  /* Chrome 10-2
 background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .panel-title a {
+    .panel-title a, .panel-title i {
         color: white;
-        display:block;
+        display: block;
+        text-decoration: white;
+    }
+
+
+    #map {
+        height: 300px;
+        width: 100%;
     }
 
     @media (max-width: 300px) {
@@ -155,7 +163,7 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
             box-shadow: 0 0 white;
         }
         .fhead {
-            height: 45vh;
+            height: 43vh;
         }
         .fhead img {
             height: 28vh;
@@ -168,23 +176,22 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
             padding-left: 5px;
             padding-right: 5px;
         }
-        .panel-group {
+        .panel-group, .fsocialp {
             display: block;
         }
-        .list-groupm {
+        .fsocialm, .list-groupm {
             display: none;
         }
         .list-group-item.active {
             border-left: 10px solid #34495e;
-
         }
     }
 
     @media (min-width: 768px) {
-        .panel-group {
+        .panel-group, .fsocialp {
             display: none;
         }
-        .list-groupm {
+        .fsocialm, .list-groupm {
             display: block;
         }
     }
@@ -201,8 +208,8 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                 </div>
             </div>
 
-            <div class="fsocial text-center">
-                <a><i class="fa fa-facebook " aria-hidden="true"></i></a>
+            <div class="fsocial text-center fsocialm">
+                <a href="https://facebook.com/fathur.hidayat"><i class="fa fa-facebook " aria-hidden="true"></i></a>
                 <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a><i class="fa fa-github" aria-hidden="true"></i></a>
                 <a><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -212,7 +219,9 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                 <div class="panel panel-default">
                     <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse1">Menu</a>
+                        <a data-toggle="collapse" href="#collapse1">Menu
+                        <i class="fa fa-bars float-right" aria-hidden="true"></i>
+                        </a>
                     </h4>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse">
@@ -258,7 +267,81 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                 <hr>
 
                 <div class="container-fluid">
-                    Hi there...
+                    <div class="card">
+                        <div class="card-block">
+                        <p style="text-align:justify;">Halo, saya Fathur.
+                            Saya senang mempelajari teknologi web,
+                            baik itu multi maupun single page (SPA).
+                            Menggeluti bidang ini karena
+                            minat/passion dalam hal koding yang identik 
+                            dengan symbol (penasaran dengan alphabet 
+                            asing seperti cyrillic) serta desain. 
+                            Terpilihlah Full-Stack Developer :) .
+                        </p>    
+
+                        <div class="float-right fsocialp">
+                            <a href="https://facebook.com/fathur.hidayat"><i class="fa fa-facebook " aria-hidden="true"></i></a>
+                            <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-block">    
+                                <h4>Riwayat Pendidikan</h4>
+                                <div class="list-group">
+                                    <li class="list-group-item justify-content-between">
+                                    SMKN 3 Surabaya
+                                    <span class="badge badge-default badge-pill">2009 s/d 2012</span>
+                                    </li>
+                                    <li class="list-group-item justify-content-between">
+                                    Politeknik Elektronika Negeri Surabaya
+                                    <span class="badge badge-default badge-pill">2012 s/d 2015</span>
+                                    </li>
+                                </div>
+                            </div>
+                         </div>
+
+                         <div class="card">
+                            <div class="card-block">    
+                                <h4>Pengalaman Kerja</h4>
+                                <div class="list-group">
+                                    <li class="list-group-item justify-content-between">
+                                    Widya Latansa Teknologi
+                                    <a>
+                                        <span class="badge badge-default badge-pill">8 bulan</span>
+                                        &nbsp;<i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    </li>
+                                    <li class="list-group-item justify-content-between">
+                                    Greencore System
+                                    <a>
+                                        <span class="badge badge-default badge-pill">3 bulan</span>
+                                        &nbsp;<i class="fa fa-eye" aria-hidden="true"></i>
+                                    </a>
+                                    </li>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-block">    
+                                <h4>Temui Saya di </h4>
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                    
+                    </div>
+                    
                 </div>
 
             </div>
@@ -371,7 +454,7 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                     <div class="card">
                         <img class="card-img-top img-fluid" src="holder.js/100%x180/" alt="">
                         <div class="card-block text-xs-left|center|right">
-                            <h4 class="card-title">Lainnya</h4>
+                            <h4 class="card-title">Lain-lain</h4>
                             <p class="card-text">
                                 <span class="badge badge-default">Web Scraping</span>
                                 <span class="badge badge-default">Android Native</span>
@@ -415,6 +498,24 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+</script>
+
+<script>
+function initMap() {
+    var uluru = {lat: -7.289973, lng: 112.780808};
+    var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: uluru
+    });
+    var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+    });
+}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjWn_m8KktWU7sAWg7q4fCU2ij7VGogOc&callback=initMap">
+</script>
 </body>
 </html>
