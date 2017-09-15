@@ -39,6 +39,10 @@ background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-2
 background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
+    .fcontent {
+        height: 100vh;
+        overflow-y: scroll;
+    }
     .fcontent p {
         font-family: 'Lato', sans-serif;
     }
@@ -135,6 +139,9 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
     }
     .bg-fmat {
         background: #E26A6A;
+    }
+    .bg-fbul {
+        background: #36D7B7;
     }
     .bg-fang {
         background: #e74c3c;
@@ -233,6 +240,7 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
             padding-right: 5px;
         }
     }
+    
     </style>
 </head>
 <body>
@@ -358,15 +366,15 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                                     <li class="list-group-item justify-content-between">
                                     PT. Widya Latansa Teknologi
                                     <a>
+                                        <span class="badge badge-default">Web Developer</span>
                                         <span class="badge badge-default">8 bulan</span>
-                                        &nbsp;<i class="fa fa-eye" aria-hidden="true"></i>
                                     </a>
                                     </li>
                                     <li class="list-group-item justify-content-between">
-                                    Freelance
+                                    Pekerja Lepas &emsp;
                                     <a>
+                                        <span class="badge badge-default">Web Developer</span>
                                         <span class="badge badge-default">3 bulan</span>
-                                        &nbsp;<i class="fa fa-eye" aria-hidden="true"></i>
                                     </a>
                                     </li>
                                 </div>
@@ -377,7 +385,7 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-block">    
-                                <h4>Temui Saya di </h4>
+                                <h4>Silakan bertamu di </h4>
                                 <div id="map"></div>
                             </div>
                         </div>
@@ -418,6 +426,12 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                                     <div class="progress-bar bg-fmat" role="progressbar" 
                                     style="width: 80%" aria-valuenow="80" aria-valuemin="0" 
                                     aria-valuemax="100">Materialize</div>
+                                </li>
+
+                                <li class="progress"> 
+                                    <div class="progress-bar bg-fbul" role="progressbar" 
+                                    style="width: 75%" aria-valuenow="75" aria-valuemin="0" 
+                                    aria-valuemax="100">Bulma</div>
                                 </li>
 
                                 <li class="progress"> 
@@ -620,6 +634,26 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                         <div class="col-md-3">
                             <div class="card">
                                 <div class="card-header">
+                                    One Ayat Project
+                                </div>
+                                <div class="card-block">
+                                    <p class="card-text">
+                                        <img src="oap.png" class="img-fluid" alt="">
+                                    </p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <span class="badge badge-pill badge-default">Bulma</span>
+                                    <span class="badge badge-pill badge-default">Jquery</span>
+                                    <a href="https://github.com/fzrbbx/oneayatproject" target="_blank">
+                                        <i class="fa fa-external-link float-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-header">
                                     Gistchrome - Github gist chrome ext
                                 </div>
                                 <div class="card-block">
@@ -636,6 +670,7 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -678,7 +713,9 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
                                         </blockquote>
                                         Definisi di atas cukup mewakili diri saya. Oleh sebab itu saya bergabung
                                         dengan relawan ACT Surabaya sejak April 2017. Aktivitas kami bermacam-macam. Mulai dari
-                                        penggalangan dana sampai distribusi bantuan.
+                                        penggalangan dana sampai distribusi bantuan. Saat ini relawan MRI/ACT cabang Surabaya 
+                                        masih terus berkembang baik secara struktural maupun variasi kegiatan. Oleh karena itu
+                                        semoga saya dan siapapun turut andil dalam aktivitas kemanusiaan, apapun "benderanya".
                                     </div>
                                 </div>
                                     
@@ -879,12 +916,12 @@ background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, F
 <script>
 $('#example2').typeIt({
     strings: ["Halo, saya Fathur Hidayat atau panggil saja Fathur .", 
-    "Saya senang mempelajari teknologi web, multi page maupun mengenai SPA.", 
+    "Saya senang mempelajari teknologi web, baik multi maupun mengenai SPA.", 
     "Pertama kali terjun di dunia kerja dengan Python untuk Reporting Script \
     membuat saya kembali penasaran dengan dunia web development \
     dan mendalami beberapa web framework.",
-    "Minat di bidang desain menjadi alasan lain sehingga terpilihlah Full-Stack Developer.",
-    "Mari bekerjasama dan silakan kontak di social bar yang tersedia :).", 
+    "Minat di bidang desain menjadi pertimbangan lain sehingga terpilihlah jalur Full-Stack Developer.",
+    "Mari bekerjasama dan silakan kontak di link social bar yang tersedia :).", 
     "CV (.pdf) bisa diunduh <a href='google.com'>di sini</a>."],
     speed: 50,
     breakLines: false,
