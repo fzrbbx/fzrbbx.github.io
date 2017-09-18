@@ -7,7 +7,7 @@ $('#example2').typeIt({
     "Hal itu menjadi motivasi lebih bagi saya untuk menekuni bidang ini sebagai \
     seorang yang berkarya dan sebagai 'pelajar' :D.", 
     "Sekian perkenalan singkatnya, silakan melihat konten web ini atau \
-    versi cetak (.pdf) bisa diunduh <a href='google.com'>di sini</a>."],
+    versi cetak (.pdf) bisa diunduh <a href='https://www.visualcv.com/fathur-hidayat-indo'>di sini</a>."],
     speed: 50,
     breakLines: false,
     autoStart: false,
