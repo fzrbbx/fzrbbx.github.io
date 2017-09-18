@@ -1,0 +1,230 @@
+h1, h2, h3, h4, h5, i {
+    color: #0275d8;
+    font-family: 'Lato', sans-serif;
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* font-size: 1.3vw; */
+}
+.fsidebar {
+    height: 100vh;
+    box-shadow: 2px 0 17px 0 #95a5a6;
+    padding: 0;
+    margin-left: 0;
+}
+.fhead {
+    height: 18vw;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    /* background: #0275d8; */
+    background: #005C97;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.fcontent {
+    height: 100vh;
+    overflow-y: scroll;
+}
+.fcontent p {
+    font-family: 'Lato', sans-serif;
+}
+.ffooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #7f8c8d;
+    height: 40px;
+    line-height: 40px;
+    /* background-color: #333; */
+    background: #434343;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #434343);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.fphoto {
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.fsocial {
+    margin: auto;
+    width: 80%;
+    padding: 15px;
+}
+.fsocial a {
+    padding-right: 15px;
+}
+.fsocialp a{
+    padding-right: 10px;
+    margin-top: 2px;
+}
+.fcontent-head {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.fskill li {
+    list-style: none;
+}
+i.fa {
+    margin-top: 5px;
+}
+.badge-default {
+    background: #f39c12;
+}
+
+.list-group, .list-group-item, .img-thumbnail {
+    border-radius: 0 !important;
+}
+
+.list-group-item:not(.active) {
+    transform: none;
+    /* transition: all 1s cubic-bezier(.36,-0.64,.34,1.76); */
+}
+
+.list-group-item.active {
+    transform: rotateX(360deg);
+
+    transition: all 1s cubic-bezier(.036,-0.64,.34,1.76);
+    /* box-shadow: 0 1px 5px 0 #2c3e50; */
+    /* background: #f39c12; */
+    background: #FFD200;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F7971E, #FFD200);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* border-color: #f39c12; */
+    border: 0;
+}
+.card {
+    margin-bottom: 18px;
+    box-shadow: 0 2px 10px 0 #95a5a6;
+    border-radius: 0;
+}
+.card-header a {
+    display: block;
+    text-decoration: white;
+}
+.progress, .progress-bar {
+    height: 25px;
+    line-height: 25px;
+    border-radius: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.modal-content {
+    border-radius: 0;
+    box-shadow: 5px 0 17px 0 #434343;
+}
+
+.bg-fbs {
+    background: #674172;
+}
+.bg-fmat {
+    background: #E26A6A;
+}
+.bg-fbul {
+    background: #36D7B7;
+}
+.bg-fang {
+    background: #e74c3c;
+}
+.bg-fweb {
+    background: #3498db;
+}
+.bg-flvel {
+    background: #E08283;
+}
+.bg-flum {
+    background: #F27935;
+}
+.bg-fdj {
+    background: #1E824C;
+}
+.bg-fvue {
+    background: #4fc08d;
+}
+
+.panel-title {
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+    background: #FFD200;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F7971E, #FFD200);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.panel-title a, .panel-title i {
+    color: white;
+    display: block;
+    text-decoration: white;
+}
+.blockquote {
+    margin-top: 10px;
+}
+
+
+#map {
+    height: 290px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .panel-group, .fsocialp {
+        display: none;
+    }
+    .fsocialm, .list-groupm {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .fsidebar {
+        height: 100%;
+        box-shadow: 0 0 white;
+    }
+    .fhead {
+        height: 45vh;
+        padding: 2px;
+    }
+    .fhead img {
+        height: 28vh;
+    }
+    .ffooter {
+        display: none;
+    }
+    .fsocial {
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .panel-group, .fsocialp {
+        display: block;
+    }
+    .fsocialm, .list-groupm {
+        display: none;
+    }
+    .list-group-item.active {
+        background: #95a5a6;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .fhead {
+        height: 25vh;
+        padding: 2px;
+    }
+    .fphoto p {
+        font-size: 11px;
+    }
+    .fsocial {
+        width: 80%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .fsocial a {
+        padding-right: 5px;
+    }
+}
